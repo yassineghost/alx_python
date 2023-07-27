@@ -14,7 +14,7 @@ def pow(a, b):
         a *= a
         b //= 2
 
-    # Round the result to 15 decimal places for better precision
-    result = round(result, 15)
+    # Format the result in scientific notation with 20 decimal places
+    result = "{:.20e}".format(result)
 
-    return result
+    return float(result)
