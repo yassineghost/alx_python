@@ -8,8 +8,13 @@ def pow(a, b):
         a = 1 / a
         b = -b
 
-    def pow(a, b):
-    result = 1
-    for _ in range(b):
-        result *= a
+    while b > 0:
+        if b % 2 == 1:
+            result *= a
+        a *= a
+        b //= 2
+
+    # Round the result to 15 decimal places for better precision
+    result = round(result, 15)
+
     return result
