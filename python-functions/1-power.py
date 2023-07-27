@@ -14,6 +14,7 @@ def pow(a, b):
         a *= a
         b //= 2
 
+    # Round the result to 15 decimal places for a better precision
     result = round(result, 15)
 
     return result
